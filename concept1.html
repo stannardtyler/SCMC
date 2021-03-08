@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Project 1 Alpha</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+    <!-- Import the component -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <h1>Project 1 Alpha</h1>
+
+    <p></p>
+
+    <p>
+      Here is a test of a photoscan object using the 3D Model viewer.
+    </p>
+
+    <p>
+      Concept I would like to explore is highlight the history and stories of my
+      local cementary that I visit to often. The Santa Clara Mission Cemetery.
+      I've done a few projects in the past with this locale as the subject; now
+      with my expoloration of 3D scanning I would like to experiment with some
+      archiving of significant historical objects and sites.
+      <br />
+      <br />
+      Below is a 3D Scan to showcase how I would represent this objects with the
+      photoscanning technique. I combination with
+      <a
+        href="https://santaclaramissioncemetery.org/about-us#:~:text=history,Clara%20changed%20locations%204%20times."
+        >this site
+      </a>
+      and further research, I hope to learn the untold histories and mysterious
+      of this cementery and bring it to light in another dimension and
+      perspective.
+    </p>
+
+    <!-- 3D Model Viewer -->
+    <model-viewer
+      src="https://cdn.glitch.com/67722b6f-4a71-4455-82f4-bb8279291eb1%2FGY_Jesus_Statue.glb?v=1613934689722"
+      alt="A 3D model of a donut"
+      auto-rotate
+      camera-controls
+      style="background-color: black;"
+    ></model-viewer>
+
+    <!--
+      <img src="https://cdn.glitch.com/67722b6f-4a71-4455-82f4-bb8279291eb1%2FRestored_1.png?v=1613620731080">
+   -->
+  </body>
+</html>
