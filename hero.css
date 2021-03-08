@@ -18,9 +18,11 @@ html {
   color: white;
 }
 
-.textinfo {
-  padding: 250px 0;
+#heroinfo {
+  padding: 150px 0;
   text-align: center;
+  margin:auto;
+  width:300px;
 }
 
 .footertext {
