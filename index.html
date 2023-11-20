@@ -8,7 +8,7 @@
     <title>Project SCMC</title>
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
 
     <!-- import the webpage's javascript file 
     <script src="/script.js" defer></script>
@@ -21,11 +21,11 @@
         background-size: auto;
         background-position: center;
       }
-      
+
       header {
         text-align: center;
         margin: auto;
-        margin-top: 250px; 
+        margin-top: 250px;
       }
     </style>
 
@@ -34,32 +34,38 @@
       type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three/examples/jsm/"
+        }
+      }
+    </script>
   </head>
 
   <body>
     <header>
-      <h1 style="margin-top:20px; margin-bottom:0;">
+      <h1 style="margin-top: 20px; margin-bottom: 0">
         Santa Clara Mission Cemetery
       </h1>
-      <p style="margin-top:0; margin-bottom:20px; text-align:center;">
+      <p style="margin-top: 0; margin-bottom: 20px; text-align: center">
         Historium Virtualis
       </p>
     </header>
 
     <div class="flex-center">
-
-    <nav>
-      <ul>
-        <!--
+      <nav>
+        <ul>
+          <!--
         <li><a href="index.html">Home</a></li>
         <li><a href="site1.html">Site 1</a></li>
         <li><a href="site2.html">Site 2</a></li>
         <li><a>Site 3</a></li>
 -->
-        <li><a href="hero.html">Enter</a></li>
-      </ul>
-    </nav>
-            
+          <li><a href="hero.html">Enter</a></li>
+        </ul>
+      </nav>
     </div>
 
     <div class="container">
