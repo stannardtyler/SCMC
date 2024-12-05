@@ -11,10 +11,10 @@ white - #fefefe
 }
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
 
 body {
-  font-family: 'Akaya Telivigala', cursive;
+  font-family: "Akaya Telivigala", cursive;
   margin: 0;
   background-color: black;
   color: #fefefe;
@@ -39,7 +39,6 @@ model-viewer {
     --poster-color: transparent;
     margin-left: auto;
     margin-right: auto;
-  
   }
 }
 
@@ -51,7 +50,7 @@ img {
 a:link,
 a:visited,
 a:active {
-  color: #120d04;
+  color: white;
   text-decoration: none;
 }
 
@@ -64,7 +63,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: #79221e;
+  color: black;
 }
 
 /* selected link */
@@ -84,8 +83,8 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #e5dfd3;
-  border: 10px solid #79221e;
+/*   background-color: #e5dfd3;
+  border: 10px solid #79221e; */
   font-weight: bold;
 }
 
@@ -100,15 +99,15 @@ li a {
 
 li a:hover {
   /*color: #79221e;*/
-  background-color: black;
+  background-color: white;
   font-weight: bold;
 }
 
 header {
-  color: #120d04;
+  color: white;
   text-align: center;
-  background-color: #e5dfd3;
-  border: 10px solid #79221e;
+/*   background-color: #e5dfd3;
+  border: 10px solid #79221e; */
   width: 50%;
   margin: auto;
   /*margin-left: 100px;
@@ -117,10 +116,11 @@ header {
   font-style: italic;
   font-weight: bold;
   max-width: 1000px;
+  text-shadow: 2px 2px #454545;
 }
 
 footer {
-  color: #120d04;
+  color: white;
   text-align: center;
   max-width: 100%;
   font-style: italic;
@@ -128,8 +128,8 @@ footer {
   margin-top: 10px;
   /*margin-bottom: 10px;*/
   padding: 0;
-  background-color: #e5dfd3;
-  border: 10px solid #79221e;
+/*   background-color: #e5dfd3;
+  border: 10px solid #79221e; */
   position: fixed;
   left: 0;
   bottom: 0;
@@ -178,4 +178,68 @@ footer {
 .flex-center {
   display: flex;
   justify-content: center;
+}
+
+#info {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  z-index: 1; /* TODO Solve this in HTML */
+}
+
+a,
+button,
+input,
+select {
+  pointer-events: auto;
+}
+
+.dg.ac {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 2 !important; /* TODO Solve this in HTML */
+}
+
+#overlay {
+  position: absolute;
+  font-size: 16px;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#overlay button {
+  background: transparent;
+  border: 0;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 12px 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#notSupported {
+  width: 50%;
+  margin: auto;
+  background-color: #f00;
+  margin-top: 20px;
+  padding: 10px;
 }
